@@ -5,15 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c87b5c41-2638-4800-a78c-1177be43e5b3" name="Changes" comment="Main program base working">
-      <change afterPath="$PROJECT_DIR$/test/model/PointTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/Program.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Circle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Point.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/Polygon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Polygon.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/controller/Program.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/Program.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/Circle.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/Circle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/Point.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/Point.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/model/Polygon.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/Polygon.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/model/CircleTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/model/CircleTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/model/CircleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/model/CircleTest.java" afterDir="false" />
@@ -147,7 +142,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646314399511</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Main program base working">
+      <created>1646323467403</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1646323467403</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
