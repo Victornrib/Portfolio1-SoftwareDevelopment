@@ -1,7 +1,6 @@
 package model;
 
-public class Circle extends Shape{
-
+public class Circle extends Shape {
     Point center;
     Integer radius;
 
