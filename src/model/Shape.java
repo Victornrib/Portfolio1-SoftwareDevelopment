@@ -109,6 +109,7 @@ public abstract class Shape {
     public Boolean checkPointInside(Point p) {
 
         if (type.equals("poly")) {
+            //Still need to do
             return false;
         }
         else {

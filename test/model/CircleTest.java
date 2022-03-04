@@ -2,6 +2,8 @@ package model;
 
 import org.junit.jupiter.api.Test;
 
+import java.util.ArrayList;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 
@@ -119,7 +121,7 @@ class CircleTest {
 
 
     @Test
-    void testComputeEuclideanDistanceToCircle() {
+    void testComputeEuclideanDistanceToShape() {
         int radius1 = 5;
         int radius2 = 3;
         Point p = new Point(0,0);
@@ -132,7 +134,7 @@ class CircleTest {
 
 
     @Test
-    void testComputeEuclideanDistanceToCircleError() {
+    void testComputeEuclideanDistanceToShapeError() {
         int radius1 = 5;
         int radius2 = 3;
         Point p = new Point(0,0);

@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c87b5c41-2638-4800-a78c-1177be43e5b3" name="Changes" comment="Compute circumference working (Area not)">
+    <list default="true" id="c87b5c41-2638-4800-a78c-1177be43e5b3" name="Changes" comment="Fixed possible errors program class">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Portfolio 1.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio 1.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/Program.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/Program.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/Program.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Shape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/Shape.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/Shape.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/model/CircleTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/model/CircleTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/model/CircleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/model/CircleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/model/PolygonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/model/PolygonTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +59,7 @@
     <property name="create.test.in.the.same.root" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.30013642" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
@@ -73,21 +76,23 @@
       <recent name="model" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Program">
-    <configuration name="Program" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="controller.Program" />
+  <component name="RunManager" selected="JUnit.PointTest">
+    <configuration name="PointTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Portfolio1-SoftwareDevelopment1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="controller.*" />
+          <option name="PATTERN" value="model.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="model" />
+      <option name="MAIN_CLASS_NAME" value="model.PointTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PolygonTest.testComputeCircumferencePolygon" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PolygonTest.testCheckPointInside" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Portfolio1-SoftwareDevelopment1" />
       <extension name="coverage">
         <pattern>
@@ -97,13 +102,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="model" />
       <option name="MAIN_CLASS_NAME" value="model.PolygonTest" />
-      <option name="METHOD_NAME" value="testComputeCircumferencePolygon" />
+      <option name="METHOD_NAME" value="testCheckPointInside" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PolygonTest.testComputeCircumferencePolygonError" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PolygonTest.testCheckPointInsideError" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Portfolio1-SoftwareDevelopment1" />
       <extension name="coverage">
         <pattern>
@@ -113,13 +118,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="model" />
       <option name="MAIN_CLASS_NAME" value="model.PolygonTest" />
-      <option name="METHOD_NAME" value="testComputeCircumferencePolygonError" />
+      <option name="METHOD_NAME" value="testCheckPointInsideError" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PolygonTest.testCreatePolygon" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PolygonTest.testComputeEuclideanDistanceToShape" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Portfolio1-SoftwareDevelopment1" />
       <extension name="coverage">
         <pattern>
@@ -129,13 +134,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="model" />
       <option name="MAIN_CLASS_NAME" value="model.PolygonTest" />
-      <option name="METHOD_NAME" value="testCreatePolygon" />
+      <option name="METHOD_NAME" value="testComputeEuclideanDistanceToShape" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PolygonTest.testCreatePolygonError2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PolygonTest.testComputeEuclideanDistanceToShapeError" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Portfolio1-SoftwareDevelopment1" />
       <extension name="coverage">
         <pattern>
@@ -145,7 +150,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="model" />
       <option name="MAIN_CLASS_NAME" value="model.PolygonTest" />
-      <option name="METHOD_NAME" value="testCreatePolygonError2" />
+      <option name="METHOD_NAME" value="testComputeEuclideanDistanceToShapeError" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -153,11 +158,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Program" />
-        <item itemvalue="JUnit.PolygonTest.testComputeCircumferencePolygonError" />
-        <item itemvalue="JUnit.PolygonTest.testComputeCircumferencePolygon" />
-        <item itemvalue="JUnit.PolygonTest.testCreatePolygonError2" />
-        <item itemvalue="JUnit.PolygonTest.testCreatePolygon" />
+        <item itemvalue="JUnit.PointTest" />
+        <item itemvalue="JUnit.PolygonTest.testComputeEuclideanDistanceToShapeError" />
+        <item itemvalue="JUnit.PolygonTest.testComputeEuclideanDistanceToShape" />
+        <item itemvalue="JUnit.PolygonTest.testCheckPointInsideError" />
+        <item itemvalue="JUnit.PolygonTest.testCheckPointInside" />
       </list>
     </recent_temporary>
   </component>
@@ -254,7 +259,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646414993051</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Fixed possible errors program class">
+      <created>1646420747104</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1646420747104</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -282,6 +294,7 @@
     <MESSAGE value="Test Create Polygon Error 2 Working" />
     <MESSAGE value="Compute circumference working" />
     <MESSAGE value="Compute circumference working (Area not)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Compute circumference working (Area not)" />
+    <MESSAGE value="Fixed possible errors program class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed possible errors program class" />
   </component>
 </project>
