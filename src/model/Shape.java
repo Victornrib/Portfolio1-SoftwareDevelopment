@@ -7,9 +7,9 @@ public abstract class Shape {
 
     public String type;
     public ArrayList<Point> points;
+    public Integer size;
     public Point center;
     public Integer radius;
-    public Integer size;
 
 
     public Point returnCenter() {
@@ -52,14 +52,33 @@ public abstract class Shape {
 
     public Double computeArea() {
 
-        double area;
+        double area = 0.0;
         if (type.equals("poly")) {
-            area = 0.0;
+
+            for(int i = 0; i < this.size; i++) {
+
+                if (i == 0)
+                {
+                    System.out.println(this.points.get(i).x + "x" + (this.points.get(i + 1).y + "-" + this.points.get(this.points.size() - 1).y));
+                    area += this.points.get(i).x * (this.points.get(i + 1).y - this.points.get(this.points.size() - 1).y);
+                }
+                else if (i == this.points.size() - 1)
+                {
+                    System.out.println(this.points.get(i).x + "x" + (this.points.get(0).y + "-" + this.points.get(i - 1).y));
+                    area += this.points.get(i).x * (this.points.get(0).y - this.points.get(i - 1).y);
+                }
+                else
+                {
+                    System.out.println(this.points.get(i).x + "x" + (this.points.get(i + 1).y + "-" + this.points.get(i - 1).y));
+                    area += this.points.get(i).x * (this.points.get(i + 1).y - this.points.get(i - 1).y);
+                }
+            }
+            area = Math.abs(area)/2;
         }
         else {
             area = Math.PI * Math.pow(radius,2);
         }
-        return area; // FAZER
+        return area;
     }
 
 
