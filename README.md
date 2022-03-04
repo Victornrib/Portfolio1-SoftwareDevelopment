@@ -1,3 +1,3 @@
-Portfolio1 - Software Development Project
+Portfolio 1 - Software Development
 
 Victor Nielsen and Martin Bern
