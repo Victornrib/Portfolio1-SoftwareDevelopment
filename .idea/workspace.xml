@@ -4,18 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c87b5c41-2638-4800-a78c-1177be43e5b3" name="Changes" comment="Circle completed">
-      <change afterPath="$PROJECT_DIR$/test/model/PolygonTest.java" afterDir="false" />
+    <list default="true" id="c87b5c41-2638-4800-a78c-1177be43e5b3" name="Changes" comment="Centroid function for polygon working">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Circle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Polygon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Polygon.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Shape.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/Program.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/Program.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/Circle.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/Circle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/Polygon.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/Polygon.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/model/Shape.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/Shape.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/model/CircleTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/model/CircleTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/model/CircleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/model/CircleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/model/PolygonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/model/PolygonTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +73,7 @@
       <recent name="model" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PolygonTest.testCreatePolygon">
+  <component name="RunManager" selected="JUnit.PolygonTest.testReturnCenterPolygonError">
     <configuration name="Program" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="controller.Program" />
       <module name="Portfolio1-SoftwareDevelopment1" />
@@ -90,38 +83,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CircleTest.testComputeEuclideanDistanceToCircle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Portfolio1-SoftwareDevelopment1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="model" />
-      <option name="MAIN_CLASS_NAME" value="model.CircleTest" />
-      <option name="METHOD_NAME" value="testComputeEuclideanDistanceToCircle" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CircleTest.testComputeEuclideanDistanceToCircleError" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Portfolio1-SoftwareDevelopment1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="model" />
-      <option name="MAIN_CLASS_NAME" value="model.CircleTest" />
-      <option name="METHOD_NAME" value="testComputeEuclideanDistanceToCircleError" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -157,13 +118,45 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PolygonTest.testReturnCenterPolygon" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Portfolio1-SoftwareDevelopment1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="model" />
+      <option name="MAIN_CLASS_NAME" value="model.PolygonTest" />
+      <option name="METHOD_NAME" value="testReturnCenterPolygon" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PolygonTest.testReturnCenterPolygonError" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Portfolio1-SoftwareDevelopment1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="model" />
+      <option name="MAIN_CLASS_NAME" value="model.PolygonTest" />
+      <option name="METHOD_NAME" value="testReturnCenterPolygonError" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PolygonTest.testReturnCenterPolygonError" />
+        <item itemvalue="JUnit.PolygonTest.testReturnCenterPolygon" />
         <item itemvalue="JUnit.PolygonTest.testCreatePolygon" />
         <item itemvalue="JUnit.PointTest" />
         <item itemvalue="Application.Program" />
-        <item itemvalue="JUnit.CircleTest.testComputeEuclideanDistanceToCircleError" />
-        <item itemvalue="JUnit.CircleTest.testComputeEuclideanDistanceToCircle" />
       </list>
     </recent_temporary>
   </component>
@@ -218,7 +211,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646366008129</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Starting polygon (center not working)">
+      <created>1646370376602</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1646370376602</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -239,6 +239,8 @@
     <MESSAGE value="Main program base working" />
     <MESSAGE value="Controller functional version" />
     <MESSAGE value="Circle completed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Circle completed" />
+    <MESSAGE value="Starting polygon (center not working)" />
+    <MESSAGE value="Centroid function for polygon working" />
+    <option name="LAST_COMMIT_MESSAGE" value="Centroid function for polygon working" />
   </component>
 </project>

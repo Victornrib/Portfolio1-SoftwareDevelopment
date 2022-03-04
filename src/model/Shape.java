@@ -14,26 +14,33 @@ public abstract class Shape {
 
     public Point returnCenter() {
 
+        // RETURNS ROUNDED APPROXIMATION FOR FITTING IN POINT
         if (type.equals("poly")) {
 
             Point centroid = new Point(0,0);
-            Integer signedArea = 0;
+            double AuxCentroidX = 0.0;
+            double AuxCentroidY = 0.0;
+
+            double signedArea = 0.0;
             for(int i = 0; i < this.size; i++) {
 
-                Integer x0 = this.points.get(i).x;
-                Integer y0 = this.points.get(i).y;
-                Integer x1 = this.points.get( (i+1)%this.size ).x;
-                Integer y1 = this.points.get( (i+1)%this.size ).y;
+                Double x0 = (double) this.points.get(i).x;
+                Double y0 = (double) this.points.get(i).y;
+                Double x1 = (double) this.points.get( (i+1)%this.size ).x;
+                Double y1 = (double) this.points.get( (i+1)%this.size ).y;
 
-                Integer A = (x0 * y1) - (x1 * y0);
+                double A = (x0 * y1) - (x1 * y0);
                 signedArea += A;
 
-                centroid.x += ( x0 + x1 ) * A;
-                centroid.y += ( y0 + y1 ) * A;
+                AuxCentroidX += ( x0 + x1 ) * A;
+                AuxCentroidY += ( y0 + y1 ) * A;
             }
             signedArea = signedArea/2;
-            centroid.x = ( centroid.x ) / ( 6 * signedArea);
-            centroid.y = ( centroid.y ) / ( 6 * signedArea);
+            AuxCentroidX = ( AuxCentroidX ) / ( 6 * signedArea);
+            AuxCentroidY = ( AuxCentroidY ) / ( 6 * signedArea);
+
+            centroid.x = (int) Math.round(AuxCentroidX);
+            centroid.y = (int) Math.round(AuxCentroidY);
 
             return centroid;
         }
@@ -45,7 +52,7 @@ public abstract class Shape {
 
     public Double computeArea() {
 
-        Double area;
+        double area;
         if (type.equals("poly")) {
             area = 0.0;
         }
@@ -58,7 +65,7 @@ public abstract class Shape {
 
     public Double computeCircumference() {
 
-        Double circumference;
+        double circumference;
         if (type.equals("poly")) {
             circumference = 0.0;
         }
