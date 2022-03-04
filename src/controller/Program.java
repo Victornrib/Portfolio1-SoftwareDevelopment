@@ -73,7 +73,7 @@ public class Program {
                 break;
 
             default:
-                System.out.println("\nSorry, I could not understand what you've meant...");
+                System.out.println("Sorry, I could not understand what you've meant...\n");
                 repetitionChecker();
                 break;
         }
@@ -84,9 +84,16 @@ public class Program {
 
         Scanner sc = new Scanner(System.in);
         System.out.print("\nDefine the radius of the circle: ");
-        int r = sc.nextInt();
-        Point center = generatePoint();
-        return new Circle(center, r);
+        String str = sc.nextLine();
+        try {
+            int r = Integer.parseInt(str);
+            Point center = generatePoint();
+            return new Circle(center, r);
+        }
+        catch (NumberFormatException e) {
+            System.out.println("Please input a valid number.");
+            return generateCircle();
+        }
     }
 
 
@@ -96,31 +103,36 @@ public class Program {
         System.out.print("\nDefine the number of vertices of the polygon (Must be 3 or more)\n" +
                 "(ONLY CONVEX POLYGONS CAN BE CREATED - ALL POINTS THAT BECOME IRRELEVANT AFTER THE POLYGON CREATION WILL BE DISCARDED): ");
 
-        int n = sc.nextInt();
+        String str = sc.nextLine();
+        try {
+            int n = Integer.parseInt(str);
+            ArrayList<Point> points = new ArrayList<>();
+            if (n >= 3) {
 
-        ArrayList<Point> points = new ArrayList<>();
-        if (n >= 3) {
+                System.out.println("\nPoint 1:");
+                points.add(generatePoint());
 
-            System.out.println("\nPoint 1:");
-            points.add(generatePoint());
+                for (int i = 1; i < n; i++) {
+                    System.out.println("\nPoint " + (i + 1) + ":");
+                    Point nextPoint = generatePoint();
 
-            for (int i = 1; i < n; i++) {
-                System.out.println("\nPoint " + (i + 1) + ":");
-                Point nextPoint = generatePoint();
+                    for (Point point : points) {
 
-                for (Point point : points) {
-
-                    if (Objects.equals(point.x, nextPoint.x) && Objects.equals(point.y, nextPoint.y)) {
-                        System.out.println("Two vertices of the polygon can't be the same, please do it again.\n");
-                        return generatePolygon();
+                        if (Objects.equals(point.x, nextPoint.x) && Objects.equals(point.y, nextPoint.y)) {
+                            System.out.println("Two vertices of the polygon can't be the same, please do it again.\n");
+                            return generatePolygon();
+                        }
                     }
+                    points.add(nextPoint);
                 }
-                points.add(nextPoint);
+                return new Polygon(points);
+            } else {
+                System.out.println("You have entered a invalid number of vertices, please enter a valid number.\n");
+                return generatePolygon();
             }
-            return new Polygon(points);
         }
-        else {
-            System.out.println("You have entered a invalid number of vertices, please enter a valid number.\n");
+        catch (NumberFormatException e) {
+            System.out.println("Please input a valid number.\n");
             return generatePolygon();
         }
     }
@@ -130,9 +142,17 @@ public class Program {
 
         Scanner sc = new Scanner(System.in);
         System.out.print("Select the coordinate x of your point: ");
-        int x = sc.nextInt();
-        System.out.print("Select the coordinate y of your point: ");
-        int y = sc.nextInt();
-        return new Point(x,y);
+        String str = sc.nextLine();
+        try {
+            int x = Integer.parseInt(str);
+            System.out.print("Select the coordinate y of your point: ");
+            str = sc.nextLine();
+            int y = Integer.parseInt(str);
+            return new Point(x,y);
+        }
+        catch (NumberFormatException e) {
+            System.out.println("Please input a valid number.\n");
+            return generatePoint();
+        }
     }
 }

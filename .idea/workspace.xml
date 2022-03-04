@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c87b5c41-2638-4800-a78c-1177be43e5b3" name="Changes" comment="Test Create Polygon Error 2 Working">
+    <list default="true" id="c87b5c41-2638-4800-a78c-1177be43e5b3" name="Changes" comment="Compute circumference working (Area not)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Shape.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/Shape.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/Shape.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/model/PolygonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/model/PolygonTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Portfolio 1.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio 1.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/Program.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/Program.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/Program.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +73,7 @@
       <recent name="model" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PolygonTest.testComputeCircumferencePolygonError">
+  <component name="RunManager" selected="Application.Program">
     <configuration name="Program" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="controller.Program" />
       <module name="Portfolio1-SoftwareDevelopment1" />
@@ -153,9 +153,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Program" />
         <item itemvalue="JUnit.PolygonTest.testComputeCircumferencePolygonError" />
         <item itemvalue="JUnit.PolygonTest.testComputeCircumferencePolygon" />
-        <item itemvalue="Application.Program" />
         <item itemvalue="JUnit.PolygonTest.testCreatePolygonError2" />
         <item itemvalue="JUnit.PolygonTest.testCreatePolygon" />
       </list>
@@ -247,7 +247,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646406523923</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Compute circumference working (Area not)">
+      <created>1646414993051</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1646414993051</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -273,6 +280,8 @@
     <MESSAGE value="Refined program (Restringted polygon of having the same points)" />
     <MESSAGE value="Test Creation Polygon working + Area not working" />
     <MESSAGE value="Test Create Polygon Error 2 Working" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test Create Polygon Error 2 Working" />
+    <MESSAGE value="Compute circumference working" />
+    <MESSAGE value="Compute circumference working (Area not)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Compute circumference working (Area not)" />
   </component>
 </project>
