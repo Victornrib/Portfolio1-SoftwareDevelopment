@@ -11,7 +11,6 @@ import static java.lang.System.exit;
 
 public class Program {
 
-
     public static void main(String[] args) {
 
         System.out.print("Welcome to the drawing board!\n");
@@ -21,7 +20,6 @@ public class Program {
     static void getDrawingType() {
 
         Scanner sc = new Scanner(System.in);
-
         System.out.print("\n\nPlease choose if you would like to draw a point, polygon or circle\n" +
                 "(Type 'pt' for Point, 'poly' for Polygon or 'c' for circle): ");
 
