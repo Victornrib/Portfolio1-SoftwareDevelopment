@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c87b5c41-2638-4800-a78c-1177be43e5b3" name="Changes" comment="Controller functional version">
+    <list default="true" id="c87b5c41-2638-4800-a78c-1177be43e5b3" name="Changes" comment="Circle completed">
+      <change afterPath="$PROJECT_DIR$/test/model/PolygonTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/Program.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Circle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/Polygon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Polygon.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Shape.java" afterDir="false" />
@@ -80,51 +80,16 @@
       <recent name="model" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CircleTest.testComputeEuclideanDistanceToCircleError">
-    <configuration name="CircleTest.testCheckPointInsideCircle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.PolygonTest.testCreatePolygon">
+    <configuration name="Program" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="controller.Program" />
       <module name="Portfolio1-SoftwareDevelopment1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="model.*" />
+          <option name="PATTERN" value="controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="model" />
-      <option name="MAIN_CLASS_NAME" value="model.CircleTest" />
-      <option name="METHOD_NAME" value="testCheckPointInsideCircle" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CircleTest.testCheckPointInsideCircleError" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Portfolio1-SoftwareDevelopment1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="model" />
-      <option name="MAIN_CLASS_NAME" value="model.CircleTest" />
-      <option name="METHOD_NAME" value="testCheckPointInsideCircleError" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CircleTest.testComputeAreaCircumferenceCircle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Portfolio1-SoftwareDevelopment1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="model" />
-      <option name="MAIN_CLASS_NAME" value="model.CircleTest" />
-      <option name="METHOD_NAME" value="testComputeAreaCircumferenceCircle" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -161,13 +126,44 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PointTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Portfolio1-SoftwareDevelopment1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="model" />
+      <option name="MAIN_CLASS_NAME" value="model.PointTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PolygonTest.testCreatePolygon" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Portfolio1-SoftwareDevelopment1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="model" />
+      <option name="MAIN_CLASS_NAME" value="model.PolygonTest" />
+      <option name="METHOD_NAME" value="testCreatePolygon" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PolygonTest.testCreatePolygon" />
+        <item itemvalue="JUnit.PointTest" />
+        <item itemvalue="Application.Program" />
         <item itemvalue="JUnit.CircleTest.testComputeEuclideanDistanceToCircleError" />
         <item itemvalue="JUnit.CircleTest.testComputeEuclideanDistanceToCircle" />
-        <item itemvalue="JUnit.CircleTest.testCheckPointInsideCircleError" />
-        <item itemvalue="JUnit.CircleTest.testCheckPointInsideCircle" />
-        <item itemvalue="JUnit.CircleTest.testComputeAreaCircumferenceCircle" />
       </list>
     </recent_temporary>
   </component>
@@ -215,7 +211,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646348049301</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Circle completed">
+      <created>1646366008129</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1646366008129</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -235,6 +238,7 @@
     <MESSAGE value="Tests working" />
     <MESSAGE value="Main program base working" />
     <MESSAGE value="Controller functional version" />
-    <option name="LAST_COMMIT_MESSAGE" value="Controller functional version" />
+    <MESSAGE value="Circle completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Circle completed" />
   </component>
 </project>
