@@ -35,6 +35,20 @@ class PolygonTest {
 
 
     @Test
+    void testCreatePolygonError2() {
+        Point a = new Point(0,0);
+        Point b = new Point(2,4);
+        Point c = new Point(0,0);
+
+        ArrayList<Point> points = new ArrayList<>();
+        points.add(a); points.add(b); points.add(c);
+
+        Polygon poly = new Polygon(points);
+        assertNotEquals(poly.type,"poly");
+    }
+
+
+    @Test
     void testReturnCenterPolygon() {
 
         Point a = new Point(0,0);

@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c87b5c41-2638-4800-a78c-1177be43e5b3" name="Changes" comment="Refined program (Restringted polygon of having the same points)">
+    <list default="true" id="c87b5c41-2638-4800-a78c-1177be43e5b3" name="Changes" comment="Test Creation Polygon working + Area not working">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/Program.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/Program.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Polygon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Polygon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/Polygon.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/Polygon.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/model/PolygonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/model/PolygonTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -72,7 +73,7 @@
       <recent name="model" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PolygonTest.testComputeAreaPolygon">
+  <component name="RunManager" selected="JUnit.PolygonTest.testCreatePolygonError2">
     <configuration name="Program" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="controller.Program" />
       <module name="Portfolio1-SoftwareDevelopment1" />
@@ -134,7 +135,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PolygonTest.testReturnCenterPolygonError" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PolygonTest.testCreatePolygonError2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Portfolio1-SoftwareDevelopment1" />
       <extension name="coverage">
         <pattern>
@@ -144,7 +145,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="model" />
       <option name="MAIN_CLASS_NAME" value="model.PolygonTest" />
-      <option name="METHOD_NAME" value="testReturnCenterPolygonError" />
+      <option name="METHOD_NAME" value="testCreatePolygonError2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -152,11 +153,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PolygonTest.testCreatePolygonError2" />
+        <item itemvalue="JUnit.PolygonTest.testCreatePolygon" />
         <item itemvalue="JUnit.PolygonTest.testComputeAreaPolygon" />
         <item itemvalue="JUnit.PolygonTest.testCreatePolygonError" />
-        <item itemvalue="JUnit.PolygonTest.testCreatePolygon" />
         <item itemvalue="Application.Program" />
-        <item itemvalue="JUnit.PolygonTest.testReturnCenterPolygonError" />
       </list>
     </recent_temporary>
   </component>
@@ -232,7 +233,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646404674298</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Test Creation Polygon working + Area not working">
+      <created>1646405509263</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1646405509263</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -256,6 +264,7 @@
     <MESSAGE value="Starting polygon (center not working)" />
     <MESSAGE value="Centroid function for polygon working" />
     <MESSAGE value="Refined program (Restringted polygon of having the same points)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refined program (Restringted polygon of having the same points)" />
+    <MESSAGE value="Test Creation Polygon working + Area not working" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test Creation Polygon working + Area not working" />
   </component>
 </project>
