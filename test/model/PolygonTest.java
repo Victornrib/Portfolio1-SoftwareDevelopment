@@ -50,7 +50,6 @@ class PolygonTest {
 
     @Test
     void testReturnCenterPolygon() {
-
         Point a = new Point(0,0);
         Point b = new Point(2,4);
         Point c = new Point(4,0);
@@ -68,7 +67,6 @@ class PolygonTest {
 
     @Test
     void testReturnCenterPolygonError() {
-
         Point a = new Point(0,0);
         Point b = new Point(2,4);
         Point c = new Point(8,0);
@@ -83,10 +81,9 @@ class PolygonTest {
         assertNotEquals(expectedCentroid.y, poly.returnCenter().y);
     }
 
-
+    //WRONG
     @Test
     void testComputeAreaPolygon() {
-
         Point a = new Point(0,0);
         Point b = new Point(2,0);
         Point c = new Point(0,2);
@@ -100,4 +97,60 @@ class PolygonTest {
 
         assertEquals(expectedArea, poly.computeArea());
     }
+
+    //WRONG
+    @Test
+    void testComputeAreaPolygonError() {
+        Point a = new Point(0,0);
+        Point b = new Point(2,0);
+        Point c = new Point(0,2);
+        Point d = new Point(2,2);
+
+        ArrayList<Point> points = new ArrayList<>();
+        points.add(a); points.add(b); points.add(c); points.add(d);
+
+        Polygon poly = new Polygon(points);
+        Double expectedArea = 16.0;
+
+        assertEquals(expectedArea, poly.computeArea());
+    }
+
+
+    @Test
+    void testComputeCircumferencePolygon() {
+
+        Point a = new Point(0,0);
+        Point b = new Point(2,0);
+        Point c = new Point(2,2);
+        Point d = new Point(0,2);
+
+        ArrayList<Point> points = new ArrayList<>();
+        points.add(a); points.add(b); points.add(c);
+
+        Polygon poly = new Polygon(points);
+        Double expectedCircumference = 8.885765876316732;
+
+        assertEquals(expectedCircumference, poly.computeCircumference());
+    }
+
+
+    @Test
+    void testComputeCircumferencePolygonError() {
+
+        Point a = new Point(0,0);
+        Point b = new Point(4,0);
+        Point c = new Point(2,2);
+        Point d = new Point(0,2);
+
+        ArrayList<Point> points = new ArrayList<>();
+        points.add(a); points.add(b); points.add(c);
+
+        Polygon poly = new Polygon(points);
+        Double expectedCircumference = 8.885765876316732;
+
+        assertNotEquals(expectedCircumference, poly.computeCircumference());
+    }
+
+
+
 }

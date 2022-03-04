@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c87b5c41-2638-4800-a78c-1177be43e5b3" name="Changes" comment="Test Creation Polygon working + Area not working">
+    <list default="true" id="c87b5c41-2638-4800-a78c-1177be43e5b3" name="Changes" comment="Test Create Polygon Error 2 Working">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Polygon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Polygon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/Polygon.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/Polygon.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Shape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/Shape.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/Shape.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/model/PolygonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/model/PolygonTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -73,7 +73,7 @@
       <recent name="model" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PolygonTest.testCreatePolygonError2">
+  <component name="RunManager" selected="JUnit.PolygonTest.testComputeCircumferencePolygonError">
     <configuration name="Program" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="controller.Program" />
       <module name="Portfolio1-SoftwareDevelopment1" />
@@ -87,7 +87,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PolygonTest.testComputeAreaPolygon" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PolygonTest.testComputeCircumferencePolygon" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Portfolio1-SoftwareDevelopment1" />
       <extension name="coverage">
         <pattern>
@@ -97,7 +97,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="model" />
       <option name="MAIN_CLASS_NAME" value="model.PolygonTest" />
-      <option name="METHOD_NAME" value="testComputeAreaPolygon" />
+      <option name="METHOD_NAME" value="testComputeCircumferencePolygon" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PolygonTest.testComputeCircumferencePolygonError" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Portfolio1-SoftwareDevelopment1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="model" />
+      <option name="MAIN_CLASS_NAME" value="model.PolygonTest" />
+      <option name="METHOD_NAME" value="testComputeCircumferencePolygonError" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -114,22 +130,6 @@
       <option name="PACKAGE_NAME" value="model" />
       <option name="MAIN_CLASS_NAME" value="model.PolygonTest" />
       <option name="METHOD_NAME" value="testCreatePolygon" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PolygonTest.testCreatePolygonError" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Portfolio1-SoftwareDevelopment1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="model" />
-      <option name="MAIN_CLASS_NAME" value="model.PolygonTest" />
-      <option name="METHOD_NAME" value="testCreatePolygonError" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -153,11 +153,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PolygonTest.testComputeCircumferencePolygonError" />
+        <item itemvalue="JUnit.PolygonTest.testComputeCircumferencePolygon" />
+        <item itemvalue="Application.Program" />
         <item itemvalue="JUnit.PolygonTest.testCreatePolygonError2" />
         <item itemvalue="JUnit.PolygonTest.testCreatePolygon" />
-        <item itemvalue="JUnit.PolygonTest.testComputeAreaPolygon" />
-        <item itemvalue="JUnit.PolygonTest.testCreatePolygonError" />
-        <item itemvalue="Application.Program" />
       </list>
     </recent_temporary>
   </component>
@@ -240,7 +240,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646405509263</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Test Create Polygon Error 2 Working">
+      <created>1646406523923</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1646406523923</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -265,6 +272,7 @@
     <MESSAGE value="Centroid function for polygon working" />
     <MESSAGE value="Refined program (Restringted polygon of having the same points)" />
     <MESSAGE value="Test Creation Polygon working + Area not working" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test Creation Polygon working + Area not working" />
+    <MESSAGE value="Test Create Polygon Error 2 Working" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test Create Polygon Error 2 Working" />
   </component>
 </project>

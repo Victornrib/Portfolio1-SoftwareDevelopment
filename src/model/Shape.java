@@ -86,7 +86,18 @@ public abstract class Shape {
 
         double circumference;
         if (type.equals("poly")) {
-            circumference = 0.0;
+
+            Point centroid = this.returnCenter();
+            double radius = 0.0;
+            double distance;
+
+            for (int i = 0; i < this.size; i++) {
+                distance = Math.sqrt( Math.pow(points.get(i).x-centroid.x,2) + Math.pow(points.get(i).y-centroid.y,2) );
+                if (distance > radius) {
+                    radius = distance;
+                }
+            }
+            circumference = 2 * Math.PI * radius;
         }
         else {
             circumference = 2 * Math.PI * radius;
