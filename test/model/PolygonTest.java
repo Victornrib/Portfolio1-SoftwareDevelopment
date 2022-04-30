@@ -17,7 +17,7 @@ class PolygonTest {
         points.add(a); points.add(b); points.add(c);
 
         Polygon poly = new Polygon(points);
-        assertEquals(poly.type,"poly");
+        assertEquals(points, poly.points);
     }
 
 
@@ -30,7 +30,7 @@ class PolygonTest {
         points.add(a); points.add(b);
 
         Polygon poly = new Polygon(points);
-        assertNotEquals(poly.type,"poly");
+        assertNotEquals(points, poly.points);
     }
 
 
@@ -44,7 +44,7 @@ class PolygonTest {
         points.add(a); points.add(b); points.add(c);
 
         Polygon poly = new Polygon(points);
-        assertNotEquals(poly.type,"poly");
+        assertNotEquals(points, poly.points);
     }
 
 
@@ -112,7 +112,7 @@ class PolygonTest {
         Polygon poly = new Polygon(points);
         Double expectedArea = 16.0;
 
-        assertEquals(expectedArea, poly.computeArea());
+        assertNotEquals(expectedArea, poly.computeArea());
     }
 
 
