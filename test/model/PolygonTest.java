@@ -112,7 +112,7 @@ class PolygonTest {
         Polygon poly = new Polygon(points);
         Double expectedArea = 16.0;
 
-        assertNotEquals(expectedArea, poly.computeArea());
+        assertEquals(expectedArea, poly.computeArea());
     }
 
 

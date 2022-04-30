@@ -4,14 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c87b5c41-2638-4800-a78c-1177be43e5b3" name="Changes" comment="New tests">
+    <list default="true" id="c87b5c41-2638-4800-a78c-1177be43e5b3" name="Changes" comment="Code Refactored">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio 1.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio 1.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/Program.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Circle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Point.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Polygon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Polygon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Shape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/Program.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/Program.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/Circle.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/Circle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/Point.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/Point.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/Polygon.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/Polygon.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/Shape.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/Shape.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/model/PolygonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/model/PolygonTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -77,7 +76,7 @@
       <recent name="model" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Program">
+  <component name="RunManager" selected="JUnit.PolygonTest">
     <configuration name="Program" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="controller.Program" />
       <module name="Portfolio1-SoftwareDevelopment1" />
@@ -154,11 +153,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Program" />
         <item itemvalue="JUnit.PolygonTest" />
-        <item itemvalue="JUnit.CircleTest" />
-        <item itemvalue="JUnit.PolygonTest.testReturnCenterPolygon" />
         <item itemvalue="JUnit.PointTest" />
+        <item itemvalue="JUnit.CircleTest" />
+        <item itemvalue="Application.Program" />
+        <item itemvalue="JUnit.PolygonTest.testReturnCenterPolygon" />
       </list>
     </recent_temporary>
   </component>
@@ -269,7 +268,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646433242868</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Code Refactored">
+      <created>1651293509091</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1651293509091</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -299,6 +305,7 @@
     <MESSAGE value="Compute circumference working (Area not)" />
     <MESSAGE value="Fixed possible errors program class" />
     <MESSAGE value="New tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="New tests" />
+    <MESSAGE value="Code Refactored" />
+    <option name="LAST_COMMIT_MESSAGE" value="Code Refactored" />
   </component>
 </project>
